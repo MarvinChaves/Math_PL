@@ -19,7 +19,7 @@
 #include "Functions/Print/print.cpp"
 #include "Functions/Read/read.cpp"
 
-#include "Math/math_solver.cpp"
+// #include "Math/math_solver.cpp"
 
 #include "Operators/Attribution/receive.cpp"
 
@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
 	Read read;
 
 	// MATH
-	Math_Solver math;
+	// Math_Solver math;
 
 	// file to "compile"
 	ifstream file;
@@ -234,7 +234,7 @@ int main(int argc, char *argv[])
 					}
 				}
 
-				else if (is_expr_value_print)
+				/*else if (is_expr_value_print)
 				{
 					i++;
 
@@ -258,7 +258,7 @@ int main(int argc, char *argv[])
 					}
 
 					result = math.expr_solver<int>(expr);
-				}
+				}*/
 				
 				// only execute the block bellow is the interpreter have not found any exception in code
 				if (!end_program)
